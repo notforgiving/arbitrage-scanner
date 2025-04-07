@@ -4,6 +4,7 @@ import Button from 'components/UI/Button';
 import { ReactComponent as GoogleSvg } from 'assets/google.svg';
 import { useHistory } from 'react-router-dom';
 import AuthWrapper from 'components/AuthWrapper';
+import { useTranslation } from 'react-i18next';
 import css from './styles.module.scss';
 
 type TFStateForm = {
@@ -12,6 +13,7 @@ type TFStateForm = {
 };
 
 const Login: FC = () => {
+  const { t } = useTranslation();
   const history = useHistory();
   const [formValues, setFormValue] = useState<TFStateForm>({
     phone: '',
@@ -27,16 +29,16 @@ const Login: FC = () => {
 
   return (
     <AuthWrapper
-      title="Google регистрация"
+      title={t(`auth.title`)}
       inputs={
         <>
           <Input
-            label="Телефон (не обязательно)"
+            label={t(`auth.phone`)}
             value={formValues.phone}
             onChange={(e) => handleChangeValues(e, 'phone')}
           />
           <Input
-            label="Telegram-никнейм или номер WhatsApp"
+            label={t(`auth.tg_nik`)}
             value={formValues.nik}
             onChange={(e) => handleChangeValues(e, 'nik')}
           />
@@ -44,16 +46,16 @@ const Login: FC = () => {
       }
       actions={
         <>
-          <Button type="outline" className={css.googlebtn}>
+          <Button type="outline" className={css.googlebtn}  onClick={() => history.push('/register')}>
             <GoogleSvg />
-            <span>Google регистрация</span>
+            <span>{t(`auth.title`)}</span>
           </Button>
           <Button
             type="outline"
             className={css.back}
-            onClick={() => history.push('/')}
+            onClick={() => history.goBack()}
           >
-            Назад
+            {t(`back`)}
           </Button>
         </>
       }

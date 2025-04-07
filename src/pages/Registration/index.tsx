@@ -4,6 +4,7 @@ import Input from 'components/UI/Input';
 import React, { FC, useState } from 'react';
 import { ReactComponent as GoogleSvg } from 'assets/google.svg';
 import { useHistory } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import css from './styles.module.scss';
 
 type TFStateForm = {
@@ -15,6 +16,7 @@ type TFStateForm = {
 };
 
 const Registration: FC = () => {
+  const { t } = useTranslation();
   const history = useHistory();
   const [formValues, setFormValue] = useState<TFStateForm>({
     email: '',
@@ -31,11 +33,11 @@ const Registration: FC = () => {
   };
   return (
     <AuthWrapper
-      title="Регистрация"
+      title={t(`auth.reg`)}
       inputs={
         <>
           <Input
-            label="Email"
+            label={t(`auth.email`)}
             value={formValues.email}
             onChange={(e) => handleChangeValues(e, 'email')}
             inputAttributes={{
@@ -43,17 +45,17 @@ const Registration: FC = () => {
             }}
           />
           <Input
-            label="Телефон"
+            label={t(`auth.phone_req`)}
             value={formValues.phone}
             onChange={(e) => handleChangeValues(e, 'phone')}
           />
           <Input
-            label="Telegram-никнейм или номер WhatsApp"
+            label={t(`auth.tg_nik`)}
             value={formValues.nik}
             onChange={(e) => handleChangeValues(e, 'nik')}
           />
           <Input
-            label="Пароль"
+            label={t(`auth.password`)}
             value={formValues.password}
             onChange={(e) => handleChangeValues(e, 'password')}
             inputAttributes={{
@@ -61,7 +63,7 @@ const Registration: FC = () => {
             }}
           />
           <Input
-            label="Подтверждение пароля"
+            label={t(`auth.confirm_pass`)}
             value={formValues.confirmPassword}
             onChange={(e) => handleChangeValues(e, 'confirmPassword')}
             inputAttributes={{
@@ -72,17 +74,17 @@ const Registration: FC = () => {
       }
       actions={
         <>
-          <Button type="green">Зарегистрироваться</Button>
+          <Button type="green">{t(`auth.register`)}</Button>
           <Button type="outline" className={css.googlebtn}>
             <GoogleSvg />
-            <span>Google регистрация</span>
+            <span>{t(`auth.title`)}</span>
           </Button>
           <Button
             type="outline"
             className={css.back}
-            onClick={() => history.push('/')}
+            onClick={() => history.goBack()}
           >
-            Назад
+            {t(`back`)}
           </Button>
         </>
       }

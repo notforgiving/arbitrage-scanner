@@ -2,10 +2,12 @@ import Header from 'components/Header';
 import React, { FC } from 'react';
 import Button from 'components/UI/Button';
 import { useHistory } from 'react-router-dom';
+import { Trans, useTranslation } from 'react-i18next';
 import css from './styles.module.scss';
 
 const Home: FC = () => {
   const history = useHistory();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -15,19 +17,20 @@ const Home: FC = () => {
           <section className={css.accent}>
             <div className={css.accent_content}>
               <h1 className={css.title}>
-                Находите скрытые возможности на основе{' '}
-                <strong className={css.blue}>onchain данных</strong>
+                <Trans i18nKey="main_title" components={{ bold: <strong /> }} />
               </h1>
-              <div className={css.subtitle}>
-                И повторяйте успешные стратегии топ-трейдеров быстрее других
-              </div>
-              <Button type="green" className={css.btn} onClick={()=>history.push('/auth')}>
-                Попробуйте бесплатную версию
+              <div className={css.subtitle}>{t(`subtitle`)}</div>
+              <Button
+                type="green"
+                className={css.btn}
+                onClick={() => history.push('/auth')}
+              >
+                {t(`try_free_ver`)}
               </Button>
               <ul className={css.points}>
-                <li>Более 10000 выбрали наш сервис</li>
-                <li>Победитель Ton Awards</li>
-                <li>Победитель BlockchainLife 2024</li>
+                <li>{t(`points1`)}</li>
+                <li>{t(`points2`)}</li>
+                <li>{t(`points3`)}</li>
               </ul>
             </div>
           </section>

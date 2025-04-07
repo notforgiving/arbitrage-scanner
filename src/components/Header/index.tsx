@@ -25,7 +25,7 @@ const Header: FC = () => {
             <Button onClick={()=>history.push('/register')}>{t(`registrations`)}</Button>
             <Button type="blue" onClick={()=>history.push('/auth')}>{i18n.t(`login`)}</Button>
           </div>
-          <FiLogIn className={css.header_login} size={20} />
+          <FiLogIn className={css.header_login} size={20} onClick={()=>history.push('/auth')}/>
         </div>
       </div>
     </div>

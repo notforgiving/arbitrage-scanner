@@ -162,6 +162,14 @@
   text-align: center;
   color: #000;
 
+  strong {
+    background: linear-gradient(71deg, #004fff 0%, #0040cf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
   @include tablet {
     font-size: 30px;
   }
@@ -170,9 +178,3 @@
   }
 }
 
-strong.blue {
-  background: linear-gradient(71deg, #004fff 0%, #0040cf 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
