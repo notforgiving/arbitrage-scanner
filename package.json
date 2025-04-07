@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
     "@types/classnames": "2.3.1",
     "@types/i18n": "0.13.1",
     "@types/node": "16.9.1",
