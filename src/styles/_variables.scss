@@ -1,0 +1,25 @@
+$blue: #2d6bf6;
+$blue2: #0149ec;
+$grey: #f0f3f7;
+$green: #48c41b;
+$darkText: #242d35;
+$inputGray: #f6f6f6;
+$borderGrey: #eee;
+
+@mixin laptop {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 505px) {
+    @content;
+  }
+}

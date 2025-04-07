@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC, useEffect } from 'react';
+import { I18nextProvider } from 'react-i18next';
+import { Switch, Route, Router, Redirect } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import Home from 'pages/Home';
+import Login from 'pages/Login';
+import Registration from 'pages/Registration';
+import i18n from './i18n';
 
-function App() {
+const history = createBrowserHistory();
+
+const App: FC = () => {
+  useEffect(() => {
+    window.process = {
+      ...window.process,
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <I18nextProvider i18n={i18n}>
+      <Router history={history}>
+        <Switch>
+          <Route path="/" render={() => <Home />} exact/>
+          <Route path="/auth" render={() => <Login />} exact/>
+          <Route path="/register" render={() => <Registration />} exact/>
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </I18nextProvider>
   );
-}
+};
 
 export default App;

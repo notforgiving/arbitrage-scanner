@@ -1,0 +1,46 @@
+@import 'src/styles/variables';
+
+.btn {
+  font-family: var(--font-family);
+  border: none;
+  background: $grey;
+  border-radius: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: $darkText;
+  transition: 0.3s;
+
+  &:hover {
+    background: darken($grey, 10%);
+  }
+
+  &:global(._isBlue) {
+    background: $blue;
+    color: #fff;
+
+    &:hover {
+      background: lighten($blue, 10%);
+    }
+  }
+
+  &:global(._isGreen) {
+    background: $green;
+    color: #fff;
+    &:hover {
+      background: lighten($green, 10%);
+    }
+  }
+
+  &:global(._isOutline) {
+    background: #fff;
+    border: 1px solid $grey;
+    color: $darkText;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

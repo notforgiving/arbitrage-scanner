@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+
+.header {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04);
+  background: #fff;
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &_container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &_btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 16px;
+
+    @include phone {
+      display: none;
+    }
+  }
+  &_login {
+    display: none;
+    cursor: pointer;
+    @include phone {
+      display: block;
+    }
+  }
+}

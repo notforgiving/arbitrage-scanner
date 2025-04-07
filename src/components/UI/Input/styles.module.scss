@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+
+.input {
+  label {
+    display: block;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: $darkText;
+    margin-bottom: 4px;
+  }
+  input {
+    background: $inputGray;
+    border: 1px solid $borderGrey;
+    border-radius: 12px;
+    min-height: 40px;
+    width: 100%;
+    padding: 12px 11px;
+
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+}
