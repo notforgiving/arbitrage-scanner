@@ -1,0 +1,73 @@
+@import 'src/styles/variables';
+
+.why {
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    @include tablet {
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    @include iphone {
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
+    }
+  }
+  &_item {
+    background: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    @include tablet {
+      padding: 12px;
+    }
+    img {
+      max-width: 360px;
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      @include tablet {
+        margin-bottom: 12px;
+      }
+      @include iphone {
+        max-width: 100%;
+      }
+    }
+    strong {
+      display: block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: $blue2;
+      margin-bottom: 12px;
+      @include tablet {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+      @include iphone {
+        margin-bottom: 12px;
+      }
+    }
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  &_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    :global(.btn_component) {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

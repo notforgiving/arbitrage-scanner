@@ -2,8 +2,8 @@
 
 .grid_sections {
   padding-top: 130px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 130px;
   padding-bottom: 130px;
   @include tablet {

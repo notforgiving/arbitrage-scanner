@@ -1,0 +1,67 @@
+@import 'src/styles/variables';
+
+.sliders {
+  &_title {
+    margin-bottom: 52px;
+    max-width: 677px;
+  }
+  &_tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+}
+.slider {
+  &_item {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    @media screen and (max-width: 1090px) {
+      gap: 20px;
+    }
+    @media screen and (max-width: 916px) {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  &_itemInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    @media screen and (max-width: 916px) {
+      gap: 10px;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      @media screen and (max-width: 1090px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    strong {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      text-align: center;
+    }
+  }
+  &_itemText {
+    background: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 140%;
+    flex: 1;
+    @include phone {
+      background: none;
+      border-radius: 0;
+      padding: 10px;
+      flex: none;
+    }
+  }
+}

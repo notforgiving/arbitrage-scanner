@@ -75,5 +75,12 @@ export default {
             item_3_6: 'Provides an opportunity to study successful strategies and gain insights.',
             item_3_7: 'Find the wallets that bought coins before their growth, and find out where they are invested now.',
         },
+        sliders: {
+            title: 'Why ArbitrageScanner.io - the best scanner for cryptocurrency arbitrage',
+            tabs_1: 'Media',
+            tabs_2: 'Users',
+            tabs_3: 'Results',
+            tabs_4: 'Influencers',
+        },
     }
 }

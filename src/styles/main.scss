@@ -25,7 +25,7 @@ body {
   letter-spacing: -0.02em;
   color: #000;
   background: #fff;
-  min-width: 270px;
+  min-width: 310px;
   
   @include iphone {
     font-size: 14px;
@@ -86,10 +86,8 @@ $maxWidthTitles: 520px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 12px;
   @include tablet {
     font-size: 20px;
-    margin-bottom: 8px;
   }
   @include iphone {
     margin-bottom: 32px;
@@ -97,6 +95,7 @@ $maxWidthTitles: 520px;
 }
 
 .section_desc {
+  margin-top: 12px;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: -0.02em;
@@ -109,6 +108,7 @@ $maxWidthTitles: 520px;
   margin-bottom: 52px;
   @include tablet {
     margin-bottom: 28px;
+    margin-top: 8px;
   }
   @include iphone {
     display: none;
