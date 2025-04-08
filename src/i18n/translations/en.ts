@@ -82,5 +82,22 @@ export default {
             tabs_3: 'Results',
             tabs_4: 'Influencers',
         },
+        cases: {
+            title: 'Cases',
+            desc: 'We analyze real examples of transactions based on on-chain data. Learn from successful strategies and apply them in your trading.',
+            resilient: 'The result?',
+            item_1_1: 'How to make money by following market makers?',
+            item_1_2: 'One of our clients noticed large transactions on the wallet maker GSR Markets: from July to October 2, a significant amount of Civic tokens (CVC) was received there. And then $2.4M was withdrawn, a clear signal that something was about to happen.',
+            item_1_3: 'The client did not hesitate and followed the market maker.',
+            item_1_4: 'After 3 days, the token grew, and he recorded +70% profit, earning <span>$8,400</span> net profit! net profit!',
+            item_2_1: 'How to earn +907% by following smart money?',
+            item_2_2: 'One of our users found a wallet that he had previously earned $3.29M, and decided to repeat his trades.',
+            item_2_3: 'The client did not hesitate and followed the market maker.',
+            item_2_4: 'After 5 days, he saw that the wallet he was repeating started making a profit — our client earned <span>!6,000!</span>',
+            item_3_1: 'How to make money from a falling market by following insiders?',
+            item_3_2: 'On August 5, 2024, when the market was rapidly falling, our client noticed a wallet with a winrate of 60%.',
+            item_3_3: 'He began to monitor its actions and repeated the owner\'s strategy, used data on the movements of major players and correctly read the signal from the Korean exchange Upbit.',
+            item_3_4: 'While others were panicking, he earned +40% or <span>!4,000!</span> in just on',
+        },
     }
 }
