@@ -31,6 +31,16 @@ export default {
             item_text_3: 'Identify promising projects and tokens at the stage of accumulation. Filter transactions by amount, frequency, and interaction with other wallets.',
             item_title_4: 'Automated alerts',
             item_text_4: 'Set up customized notifications and respond to important events in real time.',
+        },
+        why: {
+            title: 'Why choose Arbitration Scanner?',
+            desc: 'Get only up-to-date data, proven analysis algorithms and powerful tools for quick decision-making.',
+            item_title_1: 'Stay ahead of the market',
+            item_text_1: 'And trends before their mass distribution. Analyze insiders and act on the basis of data, not guesses.',
+            item_title_2: 'Accurate and up-to-date data',
+            item_text_2: ' All information comes from the blockchain, without delays and intermediaries.',
+            item_title_3: 'Ease of use',
+            item_text_3: ' No need to understand code or complex graphs. The intuitive interface allows you to quickly get information even without experience in analytics.',
         }
     }
 }
