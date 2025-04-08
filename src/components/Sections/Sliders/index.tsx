@@ -107,6 +107,7 @@ const Sliders: FC = () => {
           .filter((_, index) => index === selectSlider)
           .map((slider, index) => (
             <Slider
+              autoplay
               key={`slider-${index}`}
               resetView={resetView}
               sliderItems={
