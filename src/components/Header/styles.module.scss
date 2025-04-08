@@ -4,12 +4,24 @@
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04);
   background: #fff;
   padding: 14px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 1000;
+  box-shadow: -1px 0px 0px 0px #f1f1f1 inset,
+    0px 4px 13px 0px rgba(0, 0, 0, 0.02);
+  @include phone {
+    padding: 16px 0;
+  }
 
-  &_container  {
+  & .logo {
+    @include phone {
+      width: 112px;
+    }
+  }
+
+  &_container {
     display: flex;
     align-items: center;
     justify-content: space-between;

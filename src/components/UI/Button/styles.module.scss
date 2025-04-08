@@ -13,6 +13,10 @@
   color: $darkText;
   transition: 0.3s;
 
+  @include tablet {
+    padding: 11px 20px;
+  }
+
   &:hover {
     background: darken($grey, 10%);
   }
