@@ -1,0 +1,165 @@
+@import 'src/styles/variables';
+
+.accent {
+  background-image: url(../../../assets/hero.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 92px;
+  padding-bottom: 66px;
+  border-radius: 20px;
+
+  .title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 110%;
+    text-align: center;
+    color: #000;
+  
+    strong {
+      background: linear-gradient(71deg, #004fff 0%, #0040cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    @include tablet {
+      font-size: 30px;
+    }
+    @include phone {
+      font-size: 25px;
+    }
+  }
+
+  @include tablet {
+    padding: 40px 0;
+  }
+  @include phone {
+    background-image: url(../../../assets/hero_mb.webp);
+  }
+  &_content {
+    max-width: 920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      max-width: 621px;
+    }
+    @include phone {
+      padding: 0 12px;
+    }
+
+    & .title {
+      margin-bottom: 20px;
+      @include tablet {
+        margin-bottom: 8px;
+      }
+      @include phone {
+        margin-bottom: 12px;
+      }
+    }
+    & .subtitle {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @include tablet {
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+      @include phone {
+        margin-bottom: 28px;
+      }
+    }
+    & .btn {
+      margin-bottom: 52px;
+      font-size: 14px;
+
+      @include tablet {
+        margin-bottom: 28px;
+      }
+    }
+    & .points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      @include phone {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+      }
+      li {
+        position: relative;
+        padding-left: 85px;
+        font-size: 14px;
+        line-height: 140%;
+        border-right: 1px dashed #fff;
+        height: 65px;
+        align-items: center;
+        display: flex;
+        padding-right: 44px;
+        padding-left: calc(85px + 44px);
+        width: 100%;
+
+        @include tablet {
+          padding-right: 12px;
+          padding-left: calc(40px + 12px);
+          height: 40px;
+        }
+        @include phone {
+          padding-left: calc(32px + 12px);
+          height: 32px;
+          border: none;
+        }
+
+        &:first-child {
+          padding-left: 85px;
+          @include tablet {
+            padding-left: 40px;
+          }
+          &::before {
+            left: 0;
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        &::before {
+          content: '';
+          width: 65px;
+          height: 65px;
+          background: url(../../../assets/check.webp);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 44px;
+          top: 50%;
+          transform: translateY(-50%);
+
+          @include tablet {
+            width: 40px;
+            height: 40px;
+            left: 12px;
+          }
+          @include phone {
+            width: 32px;
+            height: 32px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

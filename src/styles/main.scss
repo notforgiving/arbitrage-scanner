@@ -74,3 +74,43 @@ svg {
     padding: 0 20px;
   }
 }
+
+$maxWidthTitles: 520px;
+
+.section_title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  max-width: $maxWidthTitles;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  @include tablet {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  @include iphone {
+    margin-bottom: 32px;
+  }
+}
+
+.section_desc {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $descColor;
+  max-width: $maxWidthTitles;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 52px;
+  @include tablet {
+    margin-bottom: 28px;
+  }
+  @include iphone {
+    display: none;
+  }
+}

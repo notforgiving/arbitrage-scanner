@@ -5,8 +5,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 130px;
+  padding-bottom: 130px;
   @include tablet {
     padding-top: 56px;
     gap: 56px;
+    padding-bottom: 56px;
   }
 }
