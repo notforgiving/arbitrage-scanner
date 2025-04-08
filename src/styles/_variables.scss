@@ -5,6 +5,7 @@ $green: #48c41b;
 $darkText: #242d35;
 $inputGray: #f6f6f6;
 $borderGrey: #eee;
+$descColor: #4f5b67;
 
 @mixin laptop {
   @media screen and (max-width: 1440px) {
@@ -14,6 +15,12 @@ $borderGrey: #eee;
 
 @mixin tablet {
   @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media screen and (max-width: 760px) {
     @content;
   }
 }

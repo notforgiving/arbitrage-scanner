@@ -1,0 +1,12 @@
+@import 'src/styles/variables';
+
+.grid_sections {
+  padding-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 130px;
+  @include tablet {
+    padding-top: 56px;
+    gap: 56px;
+  }
+}

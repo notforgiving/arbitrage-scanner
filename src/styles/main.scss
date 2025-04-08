@@ -25,6 +25,12 @@ body {
   letter-spacing: -0.02em;
   color: #000;
   background: #fff;
+  min-width: 270px;
+  
+  @include iphone {
+    font-size: 14px;
+    line-height: 120%;
+  }
 }
 
 * {
