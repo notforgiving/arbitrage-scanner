@@ -7,6 +7,7 @@
     align-items: center;
     gap: 50px;
     @include tablet {
+      align-items: flex-start;
       gap: 24px;
     }
     @include iphone {
@@ -50,6 +51,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    @include tablet {
+      gap: 10px;
+    }
 
     @include iphone {
       gap: 24px;
@@ -74,6 +78,7 @@
       order: 1;
       max-width: 241px;
       margin-bottom: 28px;
+      align-self: center;
     }
   }
   &_item {
@@ -85,6 +90,7 @@
 
     @include tablet {
       background: none;
+      padding-top: 54px;
     }
 
     @include iphone {
@@ -101,6 +107,11 @@
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      @include tablet {
+        top: 0;
+        width: calc(58px - 12px);
+        height: calc(55px - 12px);
+      }
 
       @include iphone {
         display: none;
@@ -116,6 +127,10 @@
       color: $blue2;
       margin-bottom: 12px;
       max-width: 188px;
+      @include tablet {
+        font-size: 16px;
+        line-height: 120%;
+      }
       @include iphone {
         max-width: fit-content;
         margin-bottom: 8px;
@@ -123,6 +138,10 @@
     }
     span {
       display: block;
+      @include tablet {
+        font-size: 14px;
+        line-height: 140%;
+      }
     }
   }
 }

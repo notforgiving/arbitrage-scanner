@@ -6,19 +6,19 @@
     font-size: 14px;
     line-height: 140%;
     letter-spacing: -0.02em;
-    color: $darkText;
+    color: $color-text;
     margin-bottom: 4px;
   }
   input {
-    background: $inputGray;
-    border: 1px solid $borderGrey;
+    background: $color-grey-100;
+    border: 1px solid $border-1-color;
     border-radius: 12px;
     min-height: 40px;
     width: 100%;
     padding: 12px 11px;
 
     &:focus {
-      border: 1px solid $blue;
+      border: 1px solid $color-accent;
     }
   }
 }

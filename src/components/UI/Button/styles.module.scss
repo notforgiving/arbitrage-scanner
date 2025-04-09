@@ -3,14 +3,14 @@
 .btn {
   font-family: var(--font-family);
   border: none;
-  background: $grey;
+  background: $bt-grey-bg-color;
   border-radius: 12px;
   padding: 12px 20px;
   cursor: pointer;
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  color: $darkText;
+  color: $color-text;
   transition: 0.3s;
 
   @include tablet {
@@ -18,33 +18,33 @@
   }
 
   &:hover {
-    background: darken($grey, 10%);
+    background: darken($bt-grey-bg-color, 10%);
   }
 
   &:global(._isBlue) {
-    background: $blue;
-    color: #fff;
+    background: $color-accent;
+    color: $bg-color-content;
 
     &:hover {
-      background: lighten($blue, 10%);
+      background: lighten($color-accent, 10%);
     }
   }
 
   &:global(._isGreen) {
     background: $green;
-    color: #fff;
+    color: $bg-color-content;
     &:hover {
       background: lighten($green, 10%);
     }
   }
 
   &:global(._isOutline) {
-    background: #fff;
-    border: 1px solid $grey;
-    color: $darkText;
+    background: $bg-color-content;
+    border: 1px solid $bt-grey-bg-color;
+    color: $color-text;
 
     &:hover {
-      color: $blue;
+      color: $color-accent;
     }
   }
 }

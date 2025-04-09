@@ -23,8 +23,8 @@ body {
   font-size: 16px;
   line-height: normal;
   letter-spacing: -0.02em;
-  color: #000;
-  background: #fff;
+  color: $text-bright;
+  background: $bg-color-content;
   min-width: 310px;
   
   @include iphone {
@@ -46,7 +46,7 @@ svg {
   vertical-align: middle;
 
   &:hover {
-    color: $blue;
+    color: $color-accent;
   }
 }
 
@@ -60,7 +60,7 @@ svg {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $blue;
+  background: $color-accent;
   border-radius: 3px;
 }
 

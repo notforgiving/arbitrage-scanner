@@ -1,7 +1,7 @@
 @import 'src/styles/variables';
 
 .footer {
-  background: #fff;
+  background: $bg-color-content;
   padding-top: 80px;
   border-top: 1px solid #eee;
   @include tablet {
@@ -60,13 +60,13 @@
           font-size: 14px;
           line-height: 140%;
           letter-spacing: -0.02em;
-          color: $darkText;
+          color: $color-text;
           text-decoration: none;
 
           &:active,
           &:focus,
           &:visited {
-            color: $darkText;
+            color: $color-text;
           }
         }
       }
@@ -78,7 +78,7 @@
         font-size: 12px;
         line-height: 150%;
         letter-spacing: 0em;
-        color: $grey2;
+        color: $color-grey-300;
       }
     }
     .contacts {
@@ -159,7 +159,7 @@
     span {
       font-size: 12px;
       line-height: 150%;
-      color: $grey2;
+      color: $color-grey-300;
     }
     img {
       width: 202px;

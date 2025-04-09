@@ -14,7 +14,7 @@
     font-size: 54px;
     line-height: 110%;
     text-align: center;
-    color: #000;
+    color: $text-bright;
   
     strong {
       background: linear-gradient(71deg, #004fff 0%, #0040cf 100%);
@@ -91,6 +91,10 @@
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
       justify-content: space-between;
+      max-width: 790px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       @include phone {
         display: flex;
         flex-direction: column;
@@ -102,7 +106,7 @@
         padding-left: 85px;
         font-size: 14px;
         line-height: 140%;
-        border-right: 1px dashed #fff;
+        border-right: 1px dashed $bg-color-content;
         height: 65px;
         align-items: center;
         display: flex;

@@ -84,7 +84,7 @@
           }
         }
         &_result {
-          background: #fff;
+          background: $bg-color-content;
           border-radius: 20px;
           padding: 15px 20px;
           @include tablet {
