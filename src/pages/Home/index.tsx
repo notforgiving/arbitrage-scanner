@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import Sliders from 'components/Sections/Sliders';
 import Cases from 'components/Sections/Cases';
 import Faq from 'components/Sections/Faq';
+import Footer from 'components/Footer';
 import css from './styles.module.scss';
 
 const Home: FC = () => {
@@ -32,7 +33,8 @@ const Home: FC = () => {
             <Cases />
           </SectionsGrid>
         </div>
-        <Faq/>
+        <Faq />
+        <Footer />
       </div>
     </>
   );

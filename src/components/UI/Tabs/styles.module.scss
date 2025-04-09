@@ -20,7 +20,7 @@
     line-height: 140%;
     letter-spacing: -0.02em;
     padding: 5px 12px;
-    color: #a8b0b9;
+    color: $grey2;
     transition: 0.3s;
     @include phone {
       font-size: 12px;

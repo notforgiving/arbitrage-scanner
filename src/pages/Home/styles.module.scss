@@ -6,14 +6,11 @@
 }
 
 .home {
-  padding: 40px 0;
   padding-top: calc(20px + 68px);
   @include tablet {
-    padding: 20px 0;
     padding-top: calc(20px + 68px);
   }
   @include phone {
-    padding: 10px 0;
     padding-top: calc(10px + 68px);
   }
 }
