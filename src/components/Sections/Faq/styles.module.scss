@@ -28,6 +28,10 @@
   &_item {
     border-bottom: 1px solid #cfdbf6;
     transition: 0.3s;
+    &:last-child {
+      border: none;
+    }
+
     &:global(._isOpen) {
       padding-bottom: 40px;
       @include tablet {
