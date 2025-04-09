@@ -3,7 +3,7 @@ import React, { FC, useState } from 'react';
 import cn from 'classnames';
 import Tabs from 'components/UI/Tabs';
 import { useTranslation } from 'react-i18next';
-import slider_1 from 'assets/slider_1.png';
+import slider_1 from 'assets/slider_1.webp';
 import slider_2 from 'assets/slider_2.webp';
 import Slider from 'components/UI/Slider';
 import css from './styles.module.scss';

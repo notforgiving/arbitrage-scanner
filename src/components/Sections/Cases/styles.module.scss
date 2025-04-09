@@ -14,7 +14,7 @@
       .item {
         border-radius: 20px;
         overflow: hidden;
-        background: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
+        background: $blueLinerGradient;
         display: flex;
         flex-direction: column;
         @include tablet {
@@ -28,7 +28,7 @@
         }
         @include iphone {
           flex-direction: column;
-          background: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
+          background: $blueLinerGradient;
           gap: 20px;
           border-radius: 25px;
   

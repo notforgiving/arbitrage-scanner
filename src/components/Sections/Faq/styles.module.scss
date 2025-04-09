@@ -1,0 +1,114 @@
+@import 'src/styles/variables';
+
+.faq {
+  background: $blueLinerGradient;
+  padding-top: 65px;
+  padding-bottom: 70px;
+  @include tablet {
+    padding: 28px 0;
+  }
+
+  &_title {
+    margin-bottom: 52px;
+    @include tablet {
+      margin-bottom: 28px;
+    }
+  }
+  &_content {
+    max-width: 946px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 104px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &_item {
+    border-bottom: 1px solid #cfdbf6;
+    transition: 0.3s;
+    &:global(._isOpen) {
+      padding-bottom: 40px;
+      @include tablet {
+        padding-bottom: 20px;
+      }
+      .faq_itemText {
+        visibility: visible;
+        opacity: 1;
+      }
+      .faq_itemHeader {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &_itemHeader {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 20px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    @include tablet {
+      padding: 12px 0;
+    }
+    svg {
+      padding-top: 5px;
+      width: 30px;
+      height: fit-content;
+      flex: none;
+      @include tablet {
+        width: 20px;
+      }
+    }
+    span {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      @include tablet {
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+    svg {
+      transition: 0.3s;
+    }
+  }
+  &_itemText {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+    padding-right: calc(20px + 30px);
+    @include tablet {
+      padding-right: calc(20px + 20px);
+    }
+    p {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  &_blockchein {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 55px;
+    @include tablet {
+      gap: 20px 30px;
+    }
+  }
+  &_blockcheinItem {
+    width: 90px;
+    height: 90px;
+    flex: none;
+    @include iphone {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

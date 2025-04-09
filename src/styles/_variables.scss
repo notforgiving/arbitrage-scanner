@@ -6,6 +6,7 @@ $darkText: #242d35;
 $inputGray: #f6f6f6;
 $borderGrey: #eee;
 $descColor: #4f5b67;
+$blueLinerGradient: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
 
 @mixin laptop {
   @media screen and (max-width: 1440px) {

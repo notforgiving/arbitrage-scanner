@@ -1,7 +1,7 @@
 @import 'src/styles/variables';
 
 .tools {
-  background: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
+  background: $blueLinerGradient;
   padding: 65px 0;
   @include tablet {
     padding: 32px 0;
@@ -81,7 +81,7 @@
     & .blue_block {
       border-radius: 20px;
       padding: 15px 20px;
-      background: linear-gradient(124deg, #f7faff 0%, #f7f7ff 100%);
+      background: $blueLinerGradient;
       @include tablet {
         padding: 12px;
       }

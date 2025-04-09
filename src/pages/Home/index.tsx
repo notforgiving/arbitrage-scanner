@@ -8,6 +8,7 @@ import Tools from 'components/Sections/Tools';
 import { useTranslation } from 'react-i18next';
 import Sliders from 'components/Sections/Sliders';
 import Cases from 'components/Sections/Cases';
+import Faq from 'components/Sections/Faq';
 import css from './styles.module.scss';
 
 const Home: FC = () => {
@@ -28,9 +29,10 @@ const Home: FC = () => {
         <div className="container">
           <SectionsGrid>
             <Sliders />
-            <Cases/>
+            <Cases />
           </SectionsGrid>
         </div>
+        <Faq/>
       </div>
     </>
   );
