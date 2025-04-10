@@ -23,25 +23,25 @@ const Footer: FC = () => {
             <LogoSvg className={css.logo} />
             <div className={css.menu}>
               <div className={css.menu_col}>
-                <a href="">О нас</a>
-                <a href="">Блог</a>
-                <a href="">Цены</a>
-                <a href="">Поддерживаемые биржи</a>
-                <a href="">White Label</a>
+                <a href="">{t(`footer.menu_item_1`)}</a>
+                <a href="">{t(`footer.menu_item_2`)}</a>
+                <a href="">{t(`footer.menu_item_3`)}</a>
+                <a href="">{t(`footer.menu_item_4`)}</a>
+                <a href="">{t(`footer.menu_item_5`)}</a>
               </div>
               <div className={css.menu_col}>
-                <a href="">Продукты</a>
-                <a href="">Партнерская программа</a>
-                <a href="">Вакансии</a>
-                <a href="">Контакты</a>
-                <a href="">Карта сайта</a>
+                <a href="">{t(`footer.menu_item_6`)}</a>
+                <a href="">{t(`footer.menu_item_7`)}</a>
+                <a href="">{t(`footer.menu_item_8`)}</a>
+                <a href="">{t(`footer.menu_item_9`)}</a>
+                <a href="">{t(`footer.menu_item_10`)}</a>
               </div>
               <div className={css.menu_col}>
-                <a href="">Политика конфиденциальности</a>
-                <a href="">Договор оферты</a>
-                <a href="">Политика возврата</a>
-                <a href="">Партнерская политика</a>
-                <a href="">Cookie</a>
+                <a href="">{t(`footer.menu_item_11`)}</a>
+                <a href="">{t(`footer.menu_item_12`)}</a>
+                <a href="">{t(`footer.menu_item_13`)}</a>
+                <a href="">{t(`footer.menu_item_14`)}</a>
+                <a href="">{t(`footer.menu_item_15`)}</a>
               </div>
             </div>
             <div className={css.owner}>

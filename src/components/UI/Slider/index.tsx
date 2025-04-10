@@ -71,14 +71,22 @@ const Slider: FC<ISliderProps> = ({
       resetTimeout();
     };
   }, [autoplay, currentSlide]);
+  
   useEffect(() => {
     setCurentSlide(0);
   }, [resetView]);
+
   useEffect(() => {
     if (bodyRef.current) {
       setHeightSlider(bodyRef.current?.children[currentSlide].clientHeight);
     }
   }, [currentSlide]);
+
+  useEffect(()=>{
+    if (bodyRef.current) {
+      setHeightSlider(bodyRef.current?.children[currentSlide].clientHeight);
+    }
+  },[])
 
   return (
     <div className={css.slider}>
