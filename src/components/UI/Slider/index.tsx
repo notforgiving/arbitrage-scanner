@@ -82,7 +82,12 @@ const Slider: FC<ISliderProps> = ({
     if (bodyRef.current) {
       setHeightSlider(bodyRef.current?.children[currentSlide].clientHeight);
     }
-  }, [currentSlide, selectSlider]);
+  }, [currentSlide]);
+
+  useEffect(() => {
+    console.log(selectSlider, 'selectSlider');
+    setHeightSlider('auto');
+  }, [selectSlider]);
 
   return (
     <div className={css.slider}>
