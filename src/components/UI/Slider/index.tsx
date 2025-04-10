@@ -8,6 +8,7 @@ interface ISliderProps {
   autoplay?: boolean;
   speed?: number;
   resetView?: boolean;
+  selectSlider?: number;
 }
 
 type directinalSlide = 'RIGHT' | 'LEFT';
@@ -17,6 +18,7 @@ const Slider: FC<ISliderProps> = ({
   autoplay,
   speed = 4000,
   resetView,
+  selectSlider,
 }) => {
   const bodyRef = useRef<HTMLDivElement>(null);
   const [totalSliders, setTotalSliders] = useState<number>(0);
@@ -71,7 +73,7 @@ const Slider: FC<ISliderProps> = ({
       resetTimeout();
     };
   }, [autoplay, currentSlide]);
-  
+
   useEffect(() => {
     setCurentSlide(0);
   }, [resetView]);
@@ -80,13 +82,7 @@ const Slider: FC<ISliderProps> = ({
     if (bodyRef.current) {
       setHeightSlider(bodyRef.current?.children[currentSlide].clientHeight);
     }
-  }, [currentSlide]);
-
-  useEffect(()=>{
-    if (bodyRef.current) {
-      setHeightSlider(bodyRef.current?.children[currentSlide].clientHeight);
-    }
-  },[])
+  }, [currentSlide, selectSlider]);
 
   return (
     <div className={css.slider}>

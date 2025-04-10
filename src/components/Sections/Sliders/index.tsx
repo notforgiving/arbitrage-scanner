@@ -181,6 +181,7 @@ const Sliders: FC = () => {
             <Slider
               key={`slider-${index}`}
               resetView={resetView}
+              selectSlider={selectSlider}
               sliderItems={
                 <>
                   {slider.map((item) => (
