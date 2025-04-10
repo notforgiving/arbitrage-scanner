@@ -1,6 +1,7 @@
 import React, { FC, ReactNodeArray, useEffect, useRef, useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import cn from 'classnames';
+import { useSwipeable } from 'react-swipeable';
 import css from './styles.module.scss';
 
 interface ISliderProps {
@@ -85,12 +86,16 @@ const Slider: FC<ISliderProps> = ({
   }, [currentSlide]);
 
   useEffect(() => {
-    console.log(selectSlider, 'selectSlider');
     setHeightSlider('auto');
   }, [selectSlider]);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => slideSlider('RIGHT'),
+    onSwipedRight: () => slideSlider('LEFT'),
+  });
+
   return (
-    <div className={css.slider}>
+    <div className={css.slider} {...handlers}>
       <div
         className={cn(css.slider_arrow, css.prev)}
         onClick={() => slideSlider('LEFT')}
