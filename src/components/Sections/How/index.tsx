@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import Video from 'components/UI/Video';
-import videoFile from 'assets/video3.webm';
+import videoFile from 'assets/video3.mp4';
 import css from './styles.module.scss';
 
 const How: FC = () => {
@@ -24,7 +24,7 @@ const How: FC = () => {
         <div className={css.how_img}>
           <Video>
             <video autoPlay muted loop>
-              <source src={videoFile} type="video/webm" />
+              <source src={videoFile} type="video/mp4" />
               <span>Ваш браузер не поддерживает встроенные видео :(</span>
             </video>
           </Video>

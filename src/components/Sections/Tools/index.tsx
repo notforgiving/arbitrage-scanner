@@ -4,9 +4,9 @@ import cn from 'classnames';
 import Button from 'components/UI/Button';
 import { useHistory } from 'react-router-dom';
 import Video from 'components/UI/Video';
-import videoFile1 from 'assets/video1.webm';
-import videoFile3 from 'assets/video3.webm';
-import videoFile2 from 'assets/video2.webm';
+import videoFile1 from 'assets/video1.mp4';
+import videoFile3 from 'assets/video3.mp4';
+import videoFile2 from 'assets/video2.mp4';
 import css from './styles.module.scss';
 
 const Tools: FC = () => {
@@ -46,7 +46,7 @@ const Tools: FC = () => {
             <div className={css.tools_itemImg}>
               <Video>
                 <video autoPlay muted loop>
-                  <source src={videoFile1} type="video/webm" />
+                  <source src={videoFile1} type="video/mp4" />
                   <span>Ваш браузер не поддерживает встроенные видео :(</span>
                 </video>
               </Video>
@@ -80,7 +80,7 @@ const Tools: FC = () => {
             <div className={css.tools_itemImg}>
               <Video>
                 <video autoPlay muted loop>
-                  <source src={videoFile2} type="video/webm" />
+                  <source src={videoFile2} type="video/mp4" />
                   <span>Ваш браузер не поддерживает встроенные видео :(</span>
                 </video>
               </Video>
@@ -109,7 +109,7 @@ const Tools: FC = () => {
             <div className={css.tools_itemImg}>
               <Video>
                 <video autoPlay muted loop>
-                  <source src={videoFile3} type="video/webm" />
+                  <source src={videoFile3} type="video/mp4" />
                   <span>Ваш браузер не поддерживает встроенные видео :(</span>
                 </video>
               </Video>

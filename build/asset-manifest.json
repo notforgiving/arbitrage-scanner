@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.8002159b.chunk.css",
-    "main.js": "/static/js/main.17226cf3.chunk.js",
-    "main.js.map": "/static/js/main.17226cf3.chunk.js.map",
+    "main.css": "/static/css/main.92db77ea.chunk.css",
+    "main.js": "/static/js/main.931f95a1.chunk.js",
+    "main.js.map": "/static/js/main.931f95a1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0483e1b5.js",
     "runtime-main.js.map": "/static/js/runtime-main.0483e1b5.js.map",
     "static/js/2.e0bc6227.chunk.js": "/static/js/2.e0bc6227.chunk.js",
     "static/js/2.e0bc6227.chunk.js.map": "/static/js/2.e0bc6227.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8002159b.chunk.css.map": "/static/css/main.8002159b.chunk.css.map",
+    "static/css/main.92db77ea.chunk.css.map": "/static/css/main.92db77ea.chunk.css.map",
     "static/js/2.e0bc6227.chunk.js.LICENSE.txt": "/static/js/2.e0bc6227.chunk.js.LICENSE.txt",
     "static/media/styles.module.scss": "/static/media/how-4.0604bfe8.webp",
     "static/media/cases_1.ccf0dca5.webp": "/static/media/cases_1.ccf0dca5.webp",
@@ -47,9 +47,9 @@
     "static/media/slider_8.35aa7829.webp": "/static/media/slider_8.35aa7829.webp",
     "static/media/slider_9.2fc09a86.webp": "/static/media/slider_9.2fc09a86.webp",
     "static/media/tg.6f8c0f44.svg": "/static/media/tg.6f8c0f44.svg",
-    "static/media/video1.085986e9.webm": "/static/media/video1.085986e9.webm",
-    "static/media/video2.d9e6ca5b.webm": "/static/media/video2.d9e6ca5b.webm",
-    "static/media/video3.07bf17af.webm": "/static/media/video3.07bf17af.webm",
+    "static/media/video1.765f9d4e.mp4": "/static/media/video1.765f9d4e.mp4",
+    "static/media/video2.fcff7c33.mp4": "/static/media/video2.fcff7c33.mp4",
+    "static/media/video3.905e276a.mp4": "/static/media/video3.905e276a.mp4",
     "static/media/why_1.3769d422.webp": "/static/media/why_1.3769d422.webp",
     "static/media/why_2.c36bcd8e.webp": "/static/media/why_2.c36bcd8e.webp",
     "static/media/why_3.53b5a9a7.webp": "/static/media/why_3.53b5a9a7.webp",
@@ -59,7 +59,7 @@
   "entrypoints": [
     "static/js/runtime-main.0483e1b5.js",
     "static/js/2.e0bc6227.chunk.js",
-    "static/css/main.8002159b.chunk.css",
-    "static/js/main.17226cf3.chunk.js"
+    "static/css/main.92db77ea.chunk.css",
+    "static/js/main.931f95a1.chunk.js"
   ]
 }
