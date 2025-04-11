@@ -1,17 +1,18 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
-import tools_1 from 'assets/tools_1.webp';
-import tools_2 from 'assets/tools_2.webp';
-import tools_3 from 'assets/tools_3.webp';
 import Button from 'components/UI/Button';
 import { useHistory } from 'react-router-dom';
+import Video from 'components/UI/Video';
+import videoFile1 from 'assets/video1.webm';
+import videoFile3 from 'assets/video3.webm';
+import videoFile2 from 'assets/video2.webm';
 import css from './styles.module.scss';
 
 const Tools: FC = () => {
   const { t } = useTranslation();
   const history = useHistory();
-  
+
   return (
     <section className={css.tools}>
       <div className={cn('container', css.tools_container)}>
@@ -42,7 +43,14 @@ const Tools: FC = () => {
                 <span>{t(`tools.item_1_10`)}</span>
               </p>
             </div>
-            <img src={tools_1} alt={tools_1} className={css.tools_itemImg} />
+            <div className={css.tools_itemImg}>
+              <Video>
+                <video autoPlay muted loop>
+                  <source src={videoFile1} type="video/webm" />
+                  <span>Ваш браузер не поддерживает встроенные видео :(</span>
+                </video>
+              </Video>
+            </div>
             <div className={css.tools_phoneTitle}>{t(`tools.item_1_1`)}</div>
           </div>
           <div className={cn(css.tools_item, '_isRevert')}>
@@ -69,8 +77,14 @@ const Tools: FC = () => {
                 </ul>
               </p>
             </div>
-
-            <img src={tools_2} alt={tools_2} className={css.tools_itemImg} />
+            <div className={css.tools_itemImg}>
+              <Video>
+                <video autoPlay muted loop>
+                  <source src={videoFile2} type="video/webm" />
+                  <span>Ваш браузер не поддерживает встроенные видео :(</span>
+                </video>
+              </Video>
+            </div>
             <div className={css.tools_phoneTitle}>{t(`tools.item_2_1`)}</div>
           </div>
           <div className={cn(css.tools_item, '')}>
@@ -92,7 +106,14 @@ const Tools: FC = () => {
                 <span>{t(`tools.item_3_7`)}</span>
               </p>
             </div>
-            <img src={tools_3} alt={tools_3} className={css.tools_itemImg} />
+            <div className={css.tools_itemImg}>
+              <Video>
+                <video autoPlay muted loop>
+                  <source src={videoFile3} type="video/webm" />
+                  <span>Ваш браузер не поддерживает встроенные видео :(</span>
+                </video>
+              </Video>
+            </div>
             <div className={css.tools_phoneTitle}>{t(`tools.item_3_1`)}</div>
           </div>
         </div>

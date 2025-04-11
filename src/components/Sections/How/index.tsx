@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import HowImg from 'assets/how.webp';
-import css from './styles.module.scss'
+import Video from 'components/UI/Video';
+import videoFile from 'assets/video3.webm';
+import css from './styles.module.scss';
 
 const How: FC = () => {
   const { t } = useTranslation();
@@ -20,7 +21,14 @@ const How: FC = () => {
             <span>{t(`how.item_text_2`)}</span>
           </div>
         </div>
-        <img src={HowImg} alt="" className={css.how_img} />
+        <div className={css.how_img}>
+          <Video>
+            <video autoPlay muted loop>
+              <source src={videoFile} type="video/webm" />
+              <span>Ваш браузер не поддерживает встроенные видео :(</span>
+            </video>
+          </Video>
+        </div>
         <div className={css.how_items}>
           <div className={css.how_item}>
             <strong>{t(`how.item_title_3`)}</strong>

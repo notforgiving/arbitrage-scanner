@@ -111,10 +111,10 @@
     }
   }
   &_itemImg {
-    width: 400px;
+    width: 295px;
     position: absolute;
     right: 50px;
-    bottom: 0;
+    bottom: 36px;
     transform: translateY(40%);
     @include tablet {
       position: static;
