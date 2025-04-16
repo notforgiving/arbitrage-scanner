@@ -19,6 +19,8 @@ export default {
             password: 'Password',
             confirm_pass: 'Password confirmation',
             register: 'Register',
+            policy: 'Я согласен с условиями <a1>Политики конфиденциальности</a1>, <a2>Договора Оферты</a2> и <a3>Политики возврата</a3>',
+            adds: 'Я согласен получать уведомления о новых продуктах и предложениях Arbitragecanner',
         },
         how: {
             title: 'How does our tool work?',
@@ -168,6 +170,13 @@ export default {
             menu_item_13: 'Политика возврата',
             menu_item_14: 'Партнерская политика',
             menu_item_15: 'Cookie',
+        },
+        thanks: {
+            title: 'Спасибо за регистрацию!',
+            info: 'Подпишитесь на чат бот, чтобы получить данные <br> для доступа и доступ к  личному менеджеру.',
+            contact_1: 'Telegram',
+            contact_2: 'WhatsApp',
+            contact_3: 'Facebook',
         },
     }
 }

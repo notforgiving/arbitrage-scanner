@@ -19,6 +19,8 @@ export default {
             password: 'Password',
             confirm_pass: 'Password confirmation',
             register: 'Register',
+            policy: 'Я согласен с условиями <a1>Политики конфиденциальности</a1>, <a2>Договора Оферты</a2> и <a3>Политики возврата</a3>',
+            adds: 'Я согласен получать уведомления о новых продуктах и предложениях Arbitragecanner',
         },
         how: {
             title: 'How does our tool work?',
