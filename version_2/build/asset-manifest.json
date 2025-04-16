@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.88c5aa68.chunk.css",
-    "main.js": "/static/js/main.9283bb3b.chunk.js",
-    "main.js.map": "/static/js/main.9283bb3b.chunk.js.map",
+    "main.js": "/static/js/main.98eee09e.chunk.js",
+    "main.js.map": "/static/js/main.98eee09e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5d30841b.js",
     "runtime-main.js.map": "/static/js/runtime-main.5d30841b.js.map",
     "static/js/2.a9134251.chunk.js": "/static/js/2.a9134251.chunk.js",
@@ -56,9 +56,9 @@
     "static/media/slider_8.35aa7829.webp": "/static/media/slider_8.35aa7829.webp",
     "static/media/slider_9.2fc09a86.webp": "/static/media/slider_9.2fc09a86.webp",
     "static/media/tg.6f8c0f44.svg": "/static/media/tg.6f8c0f44.svg",
-    "static/media/video1.a53fb746.mp4": "/static/media/video1.a53fb746.mp4",
-    "static/media/video2.8b8800df.mp4": "/static/media/video2.8b8800df.mp4",
-    "static/media/video3.c03cc2ff.mp4": "/static/media/video3.c03cc2ff.mp4",
+    "static/media/video1.6fb00ca9.mp4": "/static/media/video1.6fb00ca9.mp4",
+    "static/media/video2.b36ecc5d.mp4": "/static/media/video2.b36ecc5d.mp4",
+    "static/media/video3.3aafbe4b.mp4": "/static/media/video3.3aafbe4b.mp4",
     "static/media/whup.84098a69.svg": "/static/media/whup.84098a69.svg",
     "static/media/x.49350801.svg": "/static/media/x.49350801.svg",
     "static/media/youtube.78b71013.svg": "/static/media/youtube.78b71013.svg"
@@ -67,6 +67,6 @@
     "static/js/runtime-main.5d30841b.js",
     "static/js/2.a9134251.chunk.js",
     "static/css/main.88c5aa68.chunk.css",
-    "static/js/main.9283bb3b.chunk.js"
+    "static/js/main.98eee09e.chunk.js"
   ]
 }
