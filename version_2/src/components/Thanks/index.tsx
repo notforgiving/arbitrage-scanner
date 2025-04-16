@@ -15,7 +15,7 @@ const Thanks: FC = () => {
           <strong>{t(`thanks.title`)}</strong>
           <span>
             <Trans
-              i18nKey="thanks.nfo"
+              i18nKey="thanks.info"
               components={{ br: <br /> }}
             />
           </span>
