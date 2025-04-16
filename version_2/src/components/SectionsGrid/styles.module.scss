@@ -1,0 +1,14 @@
+@import 'src/styles/variables';
+
+.grid_sections {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  padding-bottom: 130px;
+  @include tablet {
+    padding-top: 56px;
+    gap: 56px;
+    padding-bottom: 56px;
+  }
+}

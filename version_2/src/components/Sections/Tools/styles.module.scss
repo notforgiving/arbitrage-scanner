@@ -1,0 +1,168 @@
+@import 'src/styles/variables';
+
+.tools {
+  background: $blueLinerGradient;
+  padding: 65px 0;
+  @include tablet {
+    padding: 32px 0;
+  }
+  @include phone {
+    padding: 36px 0;
+  }
+
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+    @include phone {
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &_item {
+    border-radius: 20px;
+    background: $bg-color-content;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 52px 90px;
+    @include tablet {
+      padding: 28px;
+      justify-content: space-between;
+    }
+    @include iphone {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 12px;
+    }
+
+    &:global(._isRevert) {
+      justify-content: flex-end;
+
+      .tools_itemImg {
+        right: auto;
+        left: 50px;
+      }
+    }
+  }
+  &_itemText {
+    max-width: 618px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include tablet {
+      gap: 12px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 140%;
+    }
+    span {
+      display: block;
+    }
+    ul {
+      list-style: initial;
+      padding-left: 25px;
+      li {
+        list-style: initial;
+      }
+    }
+    strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 8px;
+      @include phone {
+        margin-bottom: 4px;
+      }
+    }
+
+    & .blue_block {
+      border-radius: 20px;
+      padding: 15px 20px;
+      background: $blueLinerGradient;
+      @include tablet {
+        padding: 12px;
+      }
+    }
+  }
+  &_phoneTitle {
+    display: none;
+    @include phone {
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  &_itemTitle {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    @include tablet {
+      font-size: 16px;
+      line-height: 140%;
+    }
+    @include phone {
+      display: none;
+    }
+  }
+  &_itemImg {
+    width: 295px;
+    position: absolute;
+    right: 50px;
+    bottom: 36px;
+    transform: translateY(40%);
+    @include tablet {
+      position: static;
+      right: auto;
+      width: 200px;
+      transform: none;
+    }
+    @include phone {
+      width: 241px;
+      margin-bottom: 20px;
+    }
+  }
+  &_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    :global(.btn_component) {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  &_info {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    @include phone {
+      padding: 20px 12px;
+      font-size: 14px;
+      line-height: 120%;
+    }
+    span {
+      background: linear-gradient(71deg, #004fff 0%, #0040cf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

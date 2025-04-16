@@ -1,0 +1,52 @@
+@import 'src/styles/variables';
+
+.header {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04);
+  background: $bg-color-content;
+  padding: 14px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: -1px 0px 0px 0px #f1f1f1 inset,
+    0px 4px 13px 0px rgba(0, 0, 0, 0.02);
+  @include phone {
+    padding: 16px 0;
+  }
+
+  & .logo {
+    @include phone {
+      width: 112px;
+    }
+  }
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &_btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 16px;
+
+    @include phone {
+      display: none;
+    }
+  }
+  &_login {
+    display: none;
+    cursor: pointer;
+    @include phone {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@import 'src/styles/variables';
+
+.footer {
+  background: $bg-color-content;
+  padding-top: 80px;
+  border-top: 1px solid #eee;
+  @include tablet {
+    padding-top: 60px;
+  }
+  &_top {
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-areas:
+      'logo menu'
+      'owner menu'
+      'contacts contacts';
+    @include tablet {
+      grid-template-areas:
+        'logo logo'
+        'menu menu'
+        'owner contacts';
+      grid-template-columns: 1fr 0.5fr;
+      padding-bottom: 20px;
+    }
+    @include iphone {
+      grid-template-areas: 'logo' 'contacts' 'menu' 'owner';
+      grid-template-columns: 1fr;
+      padding-bottom: 16px;
+    }
+    .logo {
+      grid-area: logo;
+      width: 194px;
+      height: auto;
+      margin-bottom: 24px;
+      @include tablet {
+        margin-bottom: 40px;
+      }
+      @include iphone {
+        margin-bottom: 24px;
+      }
+    }
+    .menu {
+      grid-area: menu;
+      display: flex;
+      justify-content: flex-end;
+      gap: 80px;
+      @include tablet {
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      @include iphone {
+        flex-direction: column;
+        gap: 24px;
+      }
+      &_col {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        a {
+          font-size: 14px;
+          line-height: 140%;
+          letter-spacing: -0.02em;
+          color: $color-text;
+          text-decoration: none;
+
+          &:active,
+          &:focus,
+          &:visited {
+            color: $color-text;
+          }
+        }
+      }
+    }
+    .owner {
+      grid-area: owner;
+      span {
+        display: block;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0em;
+        color: $color-grey-300;
+      }
+    }
+    .contacts {
+      grid-area: contacts;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+      @include tablet {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @include iphone {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 40px;
+      }
+      & .email {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        @include tablet {
+          margin-bottom: 12px;
+        }
+        @include iphone {
+            margin-bottom: 0;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        span {
+          font-size: 14px;
+          line-height: 140%;
+          letter-spacing: -0.02em;
+          color: #242d35;
+        }
+      }
+      & .social {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        a {
+          width: 28px;
+          height: 28px;
+          text-decoration: none;
+          flex: none;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $blue2;
+          transition: 0.3s;
+
+          &:hover {
+            background: lighten($blue2, 10%);
+          }
+        }
+      }
+    }
+  }
+  &_bottom {
+    padding: 19px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    @include phone {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 0;
+    }
+    span {
+      font-size: 12px;
+      line-height: 150%;
+      color: $color-grey-300;
+    }
+    img {
+      width: 202px;
+      flex: none;
+    }
+  }
+}

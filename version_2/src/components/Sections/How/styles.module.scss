@@ -1,0 +1,177 @@
+@import 'src/styles/variables';
+
+.how {
+  &_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    @include tablet {
+      align-items: flex-start;
+      gap: 24px;
+    }
+    @include iphone {
+      gap: 0px;
+      flex-direction: column;
+    }
+
+    & > * {
+      &:nth-child(1) {
+        .how_item {
+          &:nth-child(1) {
+            &::before {
+              background-image: url(../../../assets/how-1.webp);
+            }
+          }
+          &:nth-child(2) {
+            &::before {
+              background-image: url(../../../assets/how-2.webp);
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        .how_item {
+          &:nth-child(1) {
+            &::before {
+              background-image: url(../../../assets/how-3.webp);
+            }
+          }
+          &:nth-child(2) {
+            &::before {
+              background-image: url(../../../assets/how-4.webp);
+            }
+          }
+        }
+      }
+    }
+  }
+  &_items {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include tablet {
+      gap: 10px;
+    }
+
+    @include iphone {
+      gap: 24px;
+      margin-bottom: 24px;
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:last-of-type {
+        order: 3;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &_img {
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 364px;
+    position: relative;
+    @include tablet {
+      max-width: 240px;
+    }
+    @include iphone {
+      order: 1;
+      max-width: 241px;
+      margin-bottom: 28px;
+      align-self: center;
+    }
+  }
+  // &_imgBg {
+  //   box-shadow: 0 0 67px 0 rgba(0, 0, 0, 0.1);
+  //   width: 100%;
+  //   position: relative;
+  //   z-index: 1;
+  // }
+  // &_imgVideo {
+  //   position: absolute;
+  //   z-index: 2;
+  //   max-width: 364px;
+  //   left: 49%;
+  //   bottom: 15px;
+  //   transform: translateX(-50%);
+  //   width: 91.5%;
+  //   height: 88%;
+  //   border-radius: 0 0 47px 47px;
+  //   overflow: hidden;
+  //   video {
+  //     display: block;
+  //     object-fit: cover;
+  //     width: 101%;
+  //     height: 100%;
+  //     object-position: center;
+  //     position: absolute;
+  //     left: 50%;
+  //     top: 50%;
+  //     transform: translate(-50%, -50%);
+  //   }
+  // }
+  &_item {
+    background: $blueLinerGradient;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 85px;
+    position: relative;
+
+    @include tablet {
+      background: none;
+      padding-top: 54px;
+    }
+
+    @include iphone {
+      padding: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 58px;
+      height: 55px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include tablet {
+        top: 0;
+        width: calc(58px - 12px);
+        height: calc(55px - 12px);
+      }
+
+      @include iphone {
+        display: none;
+      }
+    }
+
+    strong {
+      display: block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: $blue2;
+      margin-bottom: 12px;
+      max-width: 188px;
+      @include tablet {
+        font-size: 16px;
+        line-height: 120%;
+      }
+      @include iphone {
+        max-width: fit-content;
+        margin-bottom: 8px;
+      }
+    }
+    span {
+      display: block;
+      @include tablet {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+}
