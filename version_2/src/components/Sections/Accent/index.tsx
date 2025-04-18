@@ -18,7 +18,7 @@ const Accent: FC = () => {
         <Button
           type="green"
           className={css.btn}
-          onClick={() => history.push('/auth')}
+          onClick={() => history.push('/register')}
         >
           {t(`try_free_ver`)}
         </Button>

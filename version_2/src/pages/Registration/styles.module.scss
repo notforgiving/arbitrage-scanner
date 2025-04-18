@@ -1,5 +1,9 @@
 @import 'src/styles/variables';
 
+:global(.body) {
+  background: #fff;
+}
+
 .googlebtn {
   display: flex;
   align-items: center;

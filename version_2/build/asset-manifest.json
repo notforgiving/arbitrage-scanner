@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.537c3e99.chunk.css",
-    "main.js": "/static/js/main.98eee09e.chunk.js",
-    "main.js.map": "/static/js/main.98eee09e.chunk.js.map",
+    "main.css": "/static/css/main.87e52cb4.chunk.css",
+    "main.js": "/static/js/main.a991c213.chunk.js",
+    "main.js.map": "/static/js/main.a991c213.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5d30841b.js",
     "runtime-main.js.map": "/static/js/runtime-main.5d30841b.js.map",
     "static/js/2.a9134251.chunk.js": "/static/js/2.a9134251.chunk.js",
     "static/js/2.a9134251.chunk.js.map": "/static/js/2.a9134251.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.537c3e99.chunk.css.map": "/static/css/main.537c3e99.chunk.css.map",
+    "static/css/main.87e52cb4.chunk.css.map": "/static/css/main.87e52cb4.chunk.css.map",
     "static/js/2.a9134251.chunk.js.LICENSE.txt": "/static/js/2.a9134251.chunk.js.LICENSE.txt",
     "static/media/styles.module.scss": "/static/media/why_4_m.757167c0.webp",
     "static/media/binance.607a4676.svg": "/static/media/binance.607a4676.svg",
@@ -66,7 +66,7 @@
   "entrypoints": [
     "static/js/runtime-main.5d30841b.js",
     "static/js/2.a9134251.chunk.js",
-    "static/css/main.537c3e99.chunk.css",
-    "static/js/main.98eee09e.chunk.js"
+    "static/css/main.87e52cb4.chunk.css",
+    "static/js/main.a991c213.chunk.js"
   ]
 }
