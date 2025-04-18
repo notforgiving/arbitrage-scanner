@@ -33,7 +33,7 @@ const Why: FC = () => {
         </div>
       </div>
       <div className={css.why_btn}>
-        <Button type="green" onClick={() => history.push('/auth')}>
+        <Button type="green" onClick={() => history.push('/register')}>
           {t(`try_free_ver`)}
         </Button>
       </div>

@@ -118,7 +118,7 @@ const Tools: FC = () => {
           </div>
         </div>
         <div className={css.tools_btn}>
-          <Button type="green" onClick={() => history.push('/auth')}>
+          <Button type="green" onClick={() => history.push('/register')}>
             {t(`try_free_ver`)}
           </Button>
         </div>
