@@ -51,10 +51,11 @@ const Registration: FC = () => {
 
   const handleShowThanks = () => {
     setThanks(true);
-    setTimeout(() => {
-      setThanks(false);
-      history.push('/');
-    }, 5000);
+  };
+
+  const handleCloseThanks = () => {
+    setThanks(false);
+    history.push('/');
   };
 
   return (
@@ -103,9 +104,9 @@ const Registration: FC = () => {
                   <Trans
                     i18nKey="auth.policy"
                     components={{
-                      a1: <a href="" target='_blank'/>,
-                      a2: <a href="" target='_blank'/>,
-                      a3: <a href="" target='_blank'/>,
+                      a1: <a href="" target="_blank" />,
+                      a2: <a href="" target="_blank" />,
+                      a3: <a href="" target="_blank" />,
                     }}
                   />
                 }
@@ -141,7 +142,7 @@ const Registration: FC = () => {
           </>
         }
       />
-      {thanks && <Thanks />}
+      {thanks && <Thanks closeAction={handleCloseThanks} />}
     </>
   );
 };
