@@ -1,0 +1,37 @@
+@import 'src/styles/variables';
+
+:global(.body) {
+  background: #fff;
+}
+
+.googlebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.back {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #242d35;
+  padding: 10px 0;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.checkbox {
+  a {
+    display: inline;
+    text-decoration: none;
+    color: #2d74f8;
+  }
+}
+
