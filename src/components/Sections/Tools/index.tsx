@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 import Button from 'components/UI/Button';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Video from 'components/UI/Video';
 import videoFile1 from 'assets/video1.mp4';
 import videoFile3 from 'assets/video3.mp4';
@@ -11,7 +11,7 @@ import css from './styles.module.scss';
 
 const Tools: FC = () => {
   const { t } = useTranslation();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <section className={css.tools}>
@@ -118,7 +118,7 @@ const Tools: FC = () => {
           </div>
         </div>
         <div className={css.tools_btn}>
-          <Button type="green" onClick={() => history.push('/register')}>
+          <Button type="green" onClick={() => navigate('/register')}>
             {t(`try_free_ver`)}
           </Button>
         </div>

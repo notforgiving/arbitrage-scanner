@@ -6,7 +6,7 @@ import Button from 'components/UI/Button';
 import Input from 'components/UI/Input';
 import React, { FC, useState } from 'react';
 import { ReactComponent as GoogleSvg } from 'assets/google.svg';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Trans, useTranslation } from 'react-i18next';
 import Thanks from 'components/Thanks';
 import CheckboxInput from 'components/UI/Input/checkbox';
@@ -24,7 +24,7 @@ type TFStateForm = {
 
 const Registration: FC = () => {
   const { t } = useTranslation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const [thanks, setThanks] = useState<boolean>(false);
   const [formValues, setFormValue] = useState<TFStateForm>({
     email: '',
@@ -55,7 +55,7 @@ const Registration: FC = () => {
 
   const handleCloseThanks = () => {
     setThanks(false);
-    history.push('/');
+    navigate('/');
   };
 
   return (
@@ -135,7 +135,7 @@ const Registration: FC = () => {
             <Button
               type="outline"
               className={css.back}
-              onClick={() => history.goBack()}
+              onClick={() => navigate(-1)}
             >
               {t(`back`)}
             </Button>

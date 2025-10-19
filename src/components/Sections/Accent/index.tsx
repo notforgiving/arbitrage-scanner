@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import Button from 'components/UI/Button';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import css from './styles.module.scss';
 
 const Accent: FC = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
   return (
@@ -18,7 +18,7 @@ const Accent: FC = () => {
         <Button
           type="green"
           className={css.btn}
-          onClick={() => history.push('/register')}
+          onClick={() => navigate('/register')}
         >
           {t(`try_free_ver`)}
         </Button>

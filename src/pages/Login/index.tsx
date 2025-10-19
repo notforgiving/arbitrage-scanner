@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import Input from 'components/UI/Input';
 import Button from 'components/UI/Button';
 import { ReactComponent as GoogleSvg } from 'assets/google.svg';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import AuthWrapper from 'components/AuthWrapper';
 import { useTranslation } from 'react-i18next';
 import css from './styles.module.scss';
@@ -14,7 +14,7 @@ type TFStateForm = {
 
 const Login: FC = () => {
   const { t } = useTranslation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const [formValues, setFormValue] = useState<TFStateForm>({
     phone: '',
     nik: '',
@@ -46,14 +46,14 @@ const Login: FC = () => {
       }
       actions={
         <>
-          <Button type="outline" className={css.googlebtn}  onClick={() => history.push('/register')}>
+          <Button type="outline" className={css.googlebtn}  onClick={() => navigate('/register')}>
             <GoogleSvg />
             <span>{t(`auth.title`)}</span>
           </Button>
           <Button
             type="outline"
             className={css.back}
-            onClick={() => history.goBack()}
+            onClick={() => navigate(-1)}
           >
             {t(`back`)}
           </Button>

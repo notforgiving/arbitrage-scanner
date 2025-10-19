@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from 'components/UI/Button';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import whyImg_1 from 'assets/why_1.webp';
 import whyImg_2 from 'assets/why_2.webp';
 import whyImg_3 from 'assets/why_3.webp';
@@ -9,7 +9,7 @@ import css from './styles.module.scss';
 
 const Why: FC = () => {
   const { t } = useTranslation();
-  const history = useHistory();
+  const navigate = useNavigate();
   
   return (
     <section className={css.why}>
@@ -33,7 +33,7 @@ const Why: FC = () => {
         </div>
       </div>
       <div className={css.why_btn}>
-        <Button type="green" onClick={() => history.push('/register')}>
+        <Button type="green" onClick={() => navigate('/register')}>
           {t(`try_free_ver`)}
         </Button>
       </div>
